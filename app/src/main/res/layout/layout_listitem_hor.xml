@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_item"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        android:layout_centerInParent="true"
+
+        >
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/list_item_image"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:minWidth="120dp"
+                android:minHeight="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:scaleType="centerCrop"
+
+                android:background="@drawable/ios_workshob"
+                />
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/black_container"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/list_item_image"
+                android:background="#BA0C0C0C"
+                >
+
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/black_container"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:maxLines="3"
+                app:layout_constraintTop_toBottomOf="@+id/event_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#ffffff"
+                android:text="Description"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/day_date"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/black_container"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="#ffffff"
+                android:text="20"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/month_date"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/day_date"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="April"
+                android:textSize="17dp"
+                android:textAlignment="center"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

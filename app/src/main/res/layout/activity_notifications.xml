@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/NavigationDrawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".NotificationsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/nav_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="NOTIFICATIONS"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/Event_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textSize="19sp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            />
+        <!-- This is The Item -->
+        <!--********************** 1 *********************************  -->
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="2dp"
+            android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/img_working_space"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/planet_work_space"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/working_space_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Planet Co-working Space"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/img_working_space"
+                android:layout_toRightOf="@id/img_working_space"
+                />
+
+            <TextView
+                android:id="@+id/working_space_address"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="5:30 PM"
+                android:layout_toEndOf="@id/img_working_space"
+                android:layout_toRightOf="@id/img_working_space"
+                android:layout_below="@id/working_space_name"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:id="@+id/working_space_time_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Description"
+                android:layout_toEndOf="@id/img_working_space"
+                android:layout_toRightOf="@id/img_working_space"
+                android:layout_below="@id/working_space_address"
+                android:textColor="#5F5C5C"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+        </RelativeLayout>
+<!--********************** 2 *********************************  -->
+        <RelativeLayout
+            android:id="@+id/container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="2dp"
+            android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/img_working_space2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/mandala_work_space"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/working_space_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Mandala Co-working Space"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/img_working_space2"
+                android:layout_toRightOf="@id/img_working_space2"
+                />
+
+            <TextView
+                android:id="@+id/working_space_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="4:42 PM "
+                android:layout_toEndOf="@id/img_working_space2"
+                android:layout_toRightOf="@id/img_working_space2"
+                android:layout_below="@id/working_space_name2"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:id="@+id/working_space_time_booking2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Description"
+                android:layout_toEndOf="@id/img_working_space2"
+                android:layout_toRightOf="@id/img_working_space2"
+                android:layout_below="@id/working_space_address2"
+                android:textColor="#5F5C5C"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </RelativeLayout>
+        <!--********************** 3 *********************************  -->
+
+        <RelativeLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="2dp"
+            android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/img_working_space3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/beehive"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/working_space_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Beehive Co-working Space"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/img_working_space3"
+                android:layout_toRightOf="@id/img_working_space3"
+                />
+
+            <TextView
+                android:id="@+id/working_space_address3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Yesterday "
+                android:layout_toEndOf="@id/img_working_space3"
+                android:layout_toRightOf="@id/img_working_space3"
+                android:layout_below="@id/working_space_name3"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:id="@+id/working_space_time_booking3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Description"
+                android:layout_toEndOf="@id/img_working_space3"
+                android:layout_toRightOf="@id/img_working_space3"
+                android:layout_below="@id/working_space_address3"
+                android:textColor="#5F5C5C"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/Navigation_Drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity = "start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/menu"
+        app:itemTextColor="#fff"
+        android:layout_marginLeft="-64dp"
+        android:layout_marginStart="-64dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="100dp"
+        />
+
+</android.support.v4.widget.DrawerLayout>

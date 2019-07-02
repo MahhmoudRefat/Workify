@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="3dp"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/working_space_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planet Co-working Space"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/img_working_space"
+        android:layout_toRightOf="@id/img_working_space"
+        android:maxLines="1"
+        />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bookmark_selector"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            />
+    <TextView
+        android:id="@+id/working_space_address"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="co-working space address "
+        android:layout_toEndOf="@id/img_working_space"
+        android:layout_toRightOf="@id/img_working_space"
+        android:layout_below="@id/working_space_name"
+
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:id="@+id/planet_guru_innovation_space"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Planet Guru Innovation Space "
+        android:layout_toEndOf="@id/img_working_space"
+        android:layout_toRightOf="@id/img_working_space"
+        android:layout_below="@id/working_space_address"
+
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        />
+    <RatingBar
+        android:id="@+id/ratingbar_working_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_working_space"
+        android:layout_toRightOf="@id/img_working_space"
+        android:layout_below="@id/planet_guru_innovation_space"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        />
+
+    <Button
+        android:id="@+id/Btn_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp"
+        android:minHeight="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/ratingbar_working_space"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#65bf7e"
+        android:text="Booking"
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        />
+
+    <Button
+        android:id="@+id/btn_phone_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/Btn_booking"
+        android:layout_toStartOf="@id/Btn_booking"
+        android:layout_below="@id/ratingbar_working_space"
+        android:background="#ffffff"
+        android:minWidth="130dp"
+        android:minHeight="25dp"
+        android:text="Phone Call"
+        android:textColor="#65bf7e"
+        android:textSize="11sp"
+        />
+    <ImageView
+        android:id="@+id/img_working_space"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/planet_work_space"
+        android:scaleType="centerCrop"
+
+        />
+</RelativeLayout>
+
+
+</LinearLayout>

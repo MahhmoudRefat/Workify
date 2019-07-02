@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">workify</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Lorem ipsum dolor site amet ,consecteutur adipising elit sed do eiusmod tempor incididunt ut labore et dolore megna aliqua ut enim ed minim veniem auis nastrud exercitation ullemoo labori nisi ut aliquip ex ee</string>
+    <string name="title_activity_working_space_info2">WorkingSpaceInfo2Activity</string>
+
+</resources>

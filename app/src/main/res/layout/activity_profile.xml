@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ProfileActivity"
+    android:id="@+id/NavigationDrawer_layout"
+    android:fitsSystemWindows="true"
+
+    >
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/bigone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="PROFILE"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/menu180"
+    android:layout_marginTop="140dp"
+    />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/profile_pic_min"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#ffffff"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:text="Mahmoud Refaat "
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        />
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/user_name"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:background="#fff"
+    android:layout_margin="30dp"
+    >
+
+
+    <!--  *********** User Name ******************** -->
+<TextView
+    android:id="@+id/username_word"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:text="User name"
+    android:textColor="#868080"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:textSize="18sp"
+    />
+    <TextView
+        android:id="@+id/user_name_account_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/username_word"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Mahmoud Refaat"
+        android:textColor="#000"
+        />
+    <!-- **********Email ******************* -->
+    <TextView
+        android:id="@+id/email_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/user_name_account_overview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Email"
+        android:textColor="#868080"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/Email_account_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/email_word"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="mahmoud1515@gmail.com"
+        android:textColor="#000"
+        />
+
+    <!-- **********date of birth ******************* -->
+    <TextView
+        android:id="@+id/date_of_birth_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Email_account_overview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Date of Birth"
+        android:textColor="#868080"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/date_of_birth_account_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/date_of_birth_word"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="21/10/1998"
+        android:textColor="#000"
+        />
+
+    <!-- **********country ******************* -->
+    <TextView
+        android:id="@+id/country_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/date_of_birth_account_overview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Country"
+        android:textColor="#868080"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/country_account_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/country_word"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Cairo ,Egypt"
+        android:textColor="#000"
+        />
+    <!-- **********subscribe ******************* -->
+    <TextView
+        android:id="@+id/subscribe_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/country_account_overview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Subscribe"
+        android:textColor="#868080"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/subscribe_account_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subscribe_word"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Premium will end on 8/16/2019"
+        android:textColor="#000"
+    app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/Navigation_Drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity = "start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/menu"
+        app:itemTextColor="#fff"
+        android:layout_marginLeft="-64dp"
+        android:layout_marginStart="-64dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="100dp"
+        />
+
+</android.support.v4.widget.DrawerLayout>
